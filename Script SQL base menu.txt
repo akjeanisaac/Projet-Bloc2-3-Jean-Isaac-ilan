@@ -1,0 +1,135 @@
+/*
+ ----------------------------------------------------------------------------
+             Génération d'une base de données pour
+                        SQL Server 7.x
+                       (5/3/2026 14:31:29)
+ ----------------------------------------------------------------------------
+     Nom de la base : MLR2
+     Projet : 
+     Auteur : (Prof)
+     Date de dernière modification : 5/3/2026 14:29:12
+ ----------------------------------------------------------------------------
+*/
+
+drop database Base_Projet_Menu
+go
+
+/* -----------------------------------------------------------------------------
+      OUVERTURE DE LA BASE MLR2
+----------------------------------------------------------------------------- */
+
+create database Base_Projet_Menu
+go
+
+use Base_Projet_Menu
+go
+
+
+
+/* -----------------------------------------------------------------------------
+      TABLE : TYPE
+----------------------------------------------------------------------------- */
+
+create table TYPE
+  (
+     NOTYPE DB_INTEGER(2) identity (1, 1)   ,
+     LIBELLETYPE DB_TEXT, 255  null  
+     ,
+     constraint PK_TYPE primary key (NOTYPE)
+  ) 
+go
+
+
+
+/* -----------------------------------------------------------------------------
+      TABLE : MENU
+----------------------------------------------------------------------------- */
+
+create table MENU
+  (
+     REFMENU DB_INTEGER(2) identity (1, 1)   ,
+     DATEMENU DB_DATE(8)  null  ,
+     QTECOMMANDEEMENU DB_LONG(4)  null  
+     ,
+     constraint PK_MENU primary key (REFMENU)
+  ) 
+go
+
+
+
+/* -----------------------------------------------------------------------------
+      TABLE : ELEMENT_MENU
+----------------------------------------------------------------------------- */
+
+create table ELEMENT_MENU
+  (
+     REFELEMENT DB_INTEGER(2) identity (1, 1)   ,
+     NOTYPE DB_INTEGER(2)  null  ,
+     DESIGNATION DB_TEXT, 0  null  ,
+     NBCALORIES DB_LONG(8)  null  ,
+     PRIXUNITAIRE DB_INTEGER(4)  null  
+     ,
+     constraint PK_ELEMENT_MENU primary key (REFELEMENT)
+  ) 
+go
+
+
+
+/*      INDEX DE ELEMENT_MENU      */
+
+
+
+/* -----------------------------------------------------------------------------
+      TABLE : COMPOSER
+----------------------------------------------------------------------------- */
+
+create table COMPOSER
+  (
+     REFMENU DB_INTEGER(2)  not null  ,
+     REFELEMENT DB_INTEGER(2)  not null  
+     ,
+     constraint PK_COMPOSER primary key (REFMENU, REFELEMENT)
+  ) 
+go
+
+
+
+/*      INDEX DE COMPOSER      */
+
+
+
+/* -----------------------------------------------------------------------------
+      REFERENCES SUR LES TABLES
+----------------------------------------------------------------------------- */
+
+
+
+alter table ELEMENT_MENU 
+     add constraint FK_ELEMENT_MENU_TYPE foreign key (NOTYPE) 
+               references TYPE (NOTYPE)
+go
+
+
+
+
+alter table COMPOSER 
+     add constraint FK_COMPOSER_MENU foreign key (REFMENU) 
+               references MENU (REFMENU)
+go
+
+
+
+
+alter table COMPOSER 
+     add constraint FK_COMPOSER_ELEMENT_MENU foreign key (REFELEMENT) 
+               references ELEMENT_MENU (REFELEMENT)
+go
+
+
+
+
+/*
+ -----------------------------------------------------------------------------
+               FIN DE GENERATION
+ -----------------------------------------------------------------------------
+*/
