@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF92E0D7">
-        <DataGrid x:Name="DtgMenu" HorizontalAlignment="Center" Height="230" VerticalAlignment="Center" Width="412" SelectionChanged="DataGrid_SelectionChanged" >
+        <DataGrid x:Name="DtgMenu" HorizontalAlignment="Center" Height="230" VerticalAlignment="Center" Width="412">
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF92E0D7"/>
@@ -18,6 +18,32 @@
         <Label Content="MENU" HorizontalAlignment="Center" Height="37" Margin="0,41,0,0" VerticalAlignment="Top" Width="68" FontWeight="Bold" FontSize="20"/>
         <ComboBox x:Name="CbxDate" HorizontalAlignment="Left" Height="32" Margin="56,0,0,0" VerticalAlignment="Center" Width="103">
         </ComboBox>
-        <Button x:Name="BtnEleMenComp" Content="Element/Menu/Composition" HorizontalAlignment="Center" Height="49" Margin="0,337,0,0" VerticalAlignment="Top" Width="160" Click="BtnEleMenComp_Click" Background="#FF4C60B3"/>
+        <Button  x:Name="BtnMenu" Content="Menu" HorizontalAlignment="Center" Height="58" Margin="0,332,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" Click="BtnMenu_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF4C60B3" Offset="1"/>
+                    <GradientStop Color="#FF64F9EF" Offset="0.05"/>
+                    <GradientStop Color="#FF4C60B3" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnElem" Content="Element" HorizontalAlignment="Left" Height="58" Margin="505,332,0,0" VerticalAlignment="Top" Width="199" Click="BtnElem_Click" FontWeight="Bold">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF64F9EF"/>
+                    <GradientStop Color="#FF4C60B3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnComp" Content="Composition" HorizontalAlignment="Left" Height="58" Margin="96,332,0,0" VerticalAlignment="Top" Width="199" FontWeight="Bold" Click="BtnComp_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF64F9EF"/>
+                    <GradientStop Color="#FF4C60B3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

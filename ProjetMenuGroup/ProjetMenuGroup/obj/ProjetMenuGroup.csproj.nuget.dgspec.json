@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jakpossan\\Desktop\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj": {}
+    "C:\\Users\\jakpossan\\Desktop\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jakpossan\\Desktop\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj": {
+    "C:\\Users\\jakpossan\\Desktop\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakpossan\\Desktop\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj",
+        "projectUniqueName": "C:\\Users\\jakpossan\\Desktop\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj",
         "projectName": "ProjetMenuGroup",
-        "projectPath": "C:\\Users\\jakpossan\\Desktop\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj",
+        "projectPath": "C:\\Users\\jakpossan\\Desktop\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\ProjetMenuGroup.csproj",
         "packagesPath": "C:\\Users\\jakpossan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakpossan\\Desktop\\ProjetMenuGroup\\ProjetMenuGroup\\obj\\",
+        "outputPath": "C:\\Users\\jakpossan\\Desktop\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -23,5 +23,12 @@ namespace ProjetMenuGroup
         {
             InitializeComponent();
         }
+        private void BtnRetour_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            var Edit2 = new MainWindow(); // on instancie la deuxième fenêtre
+            Edit2.Closed += (s, args) => this.Close(); //On notifie à la première de se fermer au moment où la seconde se ferme
+            Edit2.Show(); // on affiche la deuxième
+        }
     }
 }

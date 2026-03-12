@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jakpossan\\source\\repos\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1834EE9-AD55-40E2-B558-E26A6F4BAB77}|ProjetMenuGroup\\ProjetMenuGroup.csproj|c:\\users\\jakpossan\\source\\repos\\akjeanisaac\\projet-bloc2-3-jean-isaac-ilan\\projetmenugroup\\projetmenugroup\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B1834EE9-AD55-40E2-B558-E26A6F4BAB77}|ProjetMenuGroup\\ProjetMenuGroup.csproj|solutionrelative:projetmenugroup\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jakpossan\\source\\repos\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ProjetMenuGroup\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jakpossan\\source\\repos\\akjeanisaac\\Projet-Bloc2-3-Jean-Isaac-ilan\\ProjetMenuGroup\\ProjetMenuGroup\\MainWindow.xaml",
+              "RelativeToolTip": "ProjetMenuGroup\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-12T13:30:58.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

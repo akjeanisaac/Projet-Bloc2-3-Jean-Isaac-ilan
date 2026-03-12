@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:ProjetMenuGroup"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF92E0D7">
+        <Button Content="Retour" HorizontalAlignment="Left" Height="37" Margin="74,354,0,0" VerticalAlignment="Top" Width="55" Click="BtnRetour_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3FADE6"/>
+                    <GradientStop Color="#FF6FFBEB" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
